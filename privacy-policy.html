@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="각다귀 채널 전용 내부 YouTube 도구의 개인정보 처리방침 초안">
+  <title>개인정보 처리방침 · 각다귀 내부 도구</title>
+  <style>
+    :root{color-scheme:light;--ink:#202b36;--muted:#526071;--line:#d7e0e5;--paper:#fff;--bg:#f4f6f8;--accent:#075a5c}
+    *{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.75 system-ui,-apple-system,sans-serif}
+    header,main,footer{max-width:880px;margin:auto;padding:24px}header{padding-top:42px}nav{display:flex;gap:20px;flex-wrap:wrap}
+    a{color:var(--accent);text-underline-offset:4px}a:focus-visible{outline:3px solid var(--accent);outline-offset:4px}
+    main{background:var(--paper);border:1px solid var(--line);border-radius:14px}h1{font-size:2rem;line-height:1.3}h2{font-size:1.4rem;margin-top:32px}
+    .note{padding:14px 18px;background:#edf4f4;border-left:4px solid var(--accent)}.label,footer{color:var(--muted);font-size:.92rem}
+    code{overflow-wrap:anywhere}section+section{margin-top:40px;padding-top:20px;border-top:1px solid var(--line)}
+    @media(max-width:600px){header,main,footer{padding:20px}main{border-radius:0}h1{font-size:1.65rem}}
+  </style>
+</head>
+<body>
+  <header><nav aria-label="주요 메뉴"><a href="index.html">앱 소개</a><a href="terms.html">이용약관</a><a href="#english" lang="en">English</a></nav></header>
+  <main>
+    <p class="label">각다귀 · content-factory · 문서 초안 / Draft</p>
+    <h1>개인정보 처리방침</h1>
+    <p class="note">작성일: 2026-10-08. 공개·감사 제출 전 <strong>chltmdghkstmdghks@naver.com</strong>을 실제 운영자 연락처로 바꾸고, 실제 배포 구성과 내용을 확인해야 합니다.</p>
+    <section aria-labelledby="ko-policy">
+      <h2 id="ko-policy">한국어</h2>
+      <p>이 도구는 YouTube 채널 <strong>「각다귀」</strong>의 단일 운영자가 자신의 채널을 관리하기 위해 사용하는 로컬 내부 도구입니다. 외부 이용자 회원가입이나 다중 사용자 서비스는 제공하지 않습니다.</p>
+      <h2>수집하는 데이터</h2>
+      <p>이 정적 안내 사이트는 방문자·외부 이용자의 개인정보를 수집하지 않습니다. 자체 쿠키, 분석 추적 코드, 입력 폼이나 운영자 수집 서버를 두지 않습니다. 다만 호스팅 제공자는 자체 정책에 따라 접속 로그를 처리할 수 있습니다.</p>
+      <p>내부 도구는 운영자의 명시적 인증을 통해 Google OAuth 인증 정보와 본인 채널의 영상·재생목록 정보 및 분석 지표를 읽거나 수정합니다. 이는 로컬에서 처리되는 API 데이터이며, “수집 데이터 없음”은 운영자 서버를 통한 외부 이용자 개인정보 수집이 없다는 뜻입니다. 인증 정보나 채널 데이터가 전혀 처리되지 않는다는 뜻은 아닙니다.</p>
+      <h2>이용 목적과 Google 처리</h2>
+      <p>사용 목적은 본인 채널의 영상 업로드, 예약 공개 설정, 제목·설명·태그 등 수정, 재생목록 관리 및 성과 분석 조회입니다. 영상 파일·메타데이터와 필요한 인증 요청은 Google/YouTube API로 전송됩니다. Google의 서비스 처리에는 <a href="https://policies.google.com/privacy">Google 개인정보처리방침</a>이 적용됩니다.</p>
+      <h2>로컬 저장과 접근</h2>
+      <p>OAuth 토큰은 운영자의 Mac에 <code>secrets/youtube_token.json</code>으로 저장하며, 파일 접근 권한을 <code>0600</code>으로 제한합니다. OAuth 클라이언트 설정은 로컬 <code>secrets/client_secret.json</code>을 사용합니다. 토큰·키를 화면 출력, 공개 문서 또는 이 사이트에 포함하지 않습니다.</p>
+      <p>영상 패키지, 작업 결과와 분석 기록은 운영자의 로컬 프로젝트에 보관합니다. 앱 운영자 서버에 업로드하거나 판매하지 않습니다. 운영자는 이 정적 사이트를 배포할 때 HTML 안내 파일만 올리고, 프로젝트·토큰·영상 패키지를 배포하지 않아야 합니다.</p>
+      <h2>보관·삭제·접근 철회</h2>
+      <p>현재 구현에는 API 데이터의 자동 만료·삭제 일정이 없습니다. 운영자가 로컬 파일을 관리·삭제하며, 제출 전에 보관 기간과 삭제 절차를 확정해야 합니다. Google 계정의 <a href="https://myaccount.google.com/connections">연결 관리</a>에서 앱 접근을 철회할 수 있습니다. 철회는 이미 저장된 로컬 데이터나 YouTube 영상을 자동 삭제하지 않습니다.</p>
+      <p>접근 철회 후 로컬 토큰·캐시·분석 기록 삭제가 필요하면 운영자가 직접 처리합니다. YouTube에 게시한 영상의 관리·삭제는 YouTube Studio에서 별도로 합니다. 삭제 요청·정책 문의 연락처: <strong>chltmdghkstmdghks@naver.com</strong>.</p>
+      <h2>정책 변경</h2>
+      <p>외부 사용자 지원, 원격 서버 저장 또는 데이터 처리 범위가 바뀌면 실제 구성을 확인한 뒤 이 방침을 수정합니다.</p>
+    </section>
+    <section id="english" lang="en" aria-labelledby="en-policy">
+      <h2 id="en-policy">Privacy Policy — English</h2>
+      <p>This local internal tool is used by the single operator of the YouTube channel <strong>각다귀</strong> to manage that operator’s own channel. It does not offer public registration or a multi-user service.</p>
+      <h2>Data collection</h2>
+      <p>This static information website does not collect personal data from visitors or external users. It has no first-party cookies, analytics trackers, forms, or operator-run collection server. The hosting provider may process access logs under its own policies.</p>
+      <p>The internal tool processes the operator’s Google OAuth credentials and the operator’s own channel videos, playlists, and analytics data locally. “No data collection” means no collection of external users’ personal data through an operator-run server; it does not mean that OAuth credentials or YouTube API data are never processed.</p>
+      <h2>Purpose and Google services</h2>
+      <p>The tool supports uploading the operator’s videos, setting scheduled publication, editing metadata, managing playlist membership, and reading performance reports. Video files, metadata, and necessary authentication requests are sent to Google/YouTube APIs. Google’s processing is described in the <a href="https://policies.google.com/privacy">Google Privacy Policy</a>.</p>
+      <h2>Local storage and access</h2>
+      <p>OAuth tokens are stored on the operator’s Mac at <code>secrets/youtube_token.json</code> with file permissions <code>0600</code>. OAuth client configuration is stored locally at <code>secrets/client_secret.json</code>. Keys and tokens are not included in output, public documents, or this website.</p>
+      <p>Video packages, operation results, and analytics records are stored in the local project. They are not uploaded to an operator-run application server or sold. Only these static HTML information files should be hosted; project files, tokens, and video packages must not be deployed with the website.</p>
+      <h2>Retention, deletion, and revocation</h2>
+      <p>The current implementation has no automatic expiry or deletion schedule for API data. The operator manages and deletes local files manually. Retention periods and deletion procedures require confirmation before submission. Access can be revoked through <a href="https://myaccount.google.com/connections">Google Account connections</a>. Revocation does not automatically delete existing local data or YouTube videos.</p>
+      <p>After revocation, the operator manually removes local tokens, caches, and analytics records as needed. Published videos are managed separately in YouTube Studio. Contact for deletion requests and policy questions: <strong>chltmdghkstmdghks@naver.com</strong>.</p>
+      <h2>Changes</h2>
+      <p>This policy will be reviewed if external user access, remote storage, or the scope of processing changes. Draft date: 2026-10-08. Replace the contact placeholder and review the actual deployment before publication or audit submission.</p>
+    </section>
+  </main>
+  <footer>단일 운영자 내부 도구 · <a href="index.html">홈페이지</a> · <a href="terms.html">이용약관</a></footer>
+</body>
+</html>
