@@ -1,52 +1,41 @@
 <!doctype html>
 <html lang="ko">
 <head>
-  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>이용약관 · 각다귀 내부 도구</title>
-  <style>
-    *{box-sizing:border-box}body{margin:0;background:#f4f6f8;color:#202b36;font:17px/1.75 system-ui,-apple-system,sans-serif}
-    header,main,footer{max-width:880px;margin:auto;padding:24px}header{padding-top:42px}nav{display:flex;gap:20px;flex-wrap:wrap}
-    main{background:white;border:1px solid #d7e0e5;border-radius:14px}a{color:#075a5c;text-underline-offset:4px}a:focus-visible{outline:3px solid #075a5c;outline-offset:4px}
-    h1{font-size:2rem;line-height:1.3}h2{font-size:1.4rem;margin-top:32px}.note{padding:14px 18px;background:#edf4f4;border-left:4px solid #075a5c}
-    .label,footer{color:#526071;font-size:.92rem}section+section{margin-top:40px;padding-top:20px;border-top:1px solid #d7e0e5}
-    @media(max-width:600px){header,main,footer{padding:20px}main{border-radius:0}h1{font-size:1.65rem}}
-  </style>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Terms of service for the Gakdagwi internal YouTube API tool">
+<title>Terms of Service - Gakdagwi Tool</title>
+<style>:root{color-scheme:light;--ink:#1f2933;--muted:#52606d;--line:#d9e2ec;--bg:#f5f7fa;--accent:#0b6b6f}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.75 system-ui,-apple-system,"Apple SD Gothic Neo",sans-serif}
+header,main,footer{max-width:900px;margin:auto;padding:22px}header{padding-top:36px}nav{display:flex;gap:18px;flex-wrap:wrap}
+a{color:var(--accent);text-underline-offset:3px}main{background:#fff;border:1px solid var(--line);border-radius:12px}
+h1{font-size:1.9rem;line-height:1.3}h2{font-size:1.25rem;margin-top:28px}section+section{margin-top:36px;padding-top:18px;border-top:1px solid var(--line)}
+table{border-collapse:collapse;width:100%;font-size:.94rem}th,td{border:1px solid var(--line);padding:6px 9px;text-align:left;vertical-align:top}th{background:#eef3f6}
+code{overflow-wrap:anywhere;background:#f0f4f7;padding:0 4px;border-radius:4px}.label,footer{color:var(--muted);font-size:.9rem}
+.box{padding:12px 16px;background:#eaf4f4;border-left:4px solid var(--accent)}
+@media(max-width:600px){header,main,footer{padding:16px}main{border-radius:0}h1{font-size:1.5rem}}</style>
 </head>
 <body>
-  <header><nav aria-label="주요 메뉴"><a href="index.html">앱 소개</a><a href="privacy-policy.html">개인정보 처리방침</a><a href="#english" lang="en">English</a></nav></header>
-  <main>
-    <p class="label">각다귀 · content-factory · 문서 초안 / Draft</p>
-    <h1>이용약관</h1>
-    <p class="note">작성일: 2026-10-08. 공개·제출 전 실제 운영 조건과 약관을 검토하고 <strong>chltmdghkstmdghks@naver.com</strong>을 바꿔야 합니다.</p>
-    <section aria-labelledby="ko-terms">
-      <h2 id="ko-terms">한국어</h2>
-      <h2>대상과 목적</h2>
-      <p>content-factory의 YouTube 도구는 「각다귀」 채널 운영자 한 명이 본인 채널을 관리하는 내부 소프트웨어입니다. 외부 사용자에게 계정을 제공하거나 이용료를 받는 서비스가 아닙니다.</p>
-      <h2>운영자의 책임</h2>
-      <p>운영자는 본인이 소유하거나 허가받은 콘텐츠만 처리하고, 게시 내용의 사실성·저작권·개인정보·아동용 설정·합성 콘텐츠 표시를 확인합니다. 업로드 및 예약 공개는 운영자가 직접 승인·실행합니다. 일반 제작 파이프라인은 게시 준비 패키지까지만 만들며 자동 게시하지 않습니다.</p>
-      <h2>YouTube 서비스 조건</h2>
-      <p>이 도구는 YouTube API Services를 사용합니다. 이용에는 <a href="https://www.youtube.com/t/terms">YouTube 서비스 약관</a> 및 관련 API 조건이 적용됩니다. 운영자는 사용 시점의 <a href="https://developers.google.com/youtube/terms/api-services-terms-of-service">YouTube API Services Terms of Service</a>와 <a href="https://developers.google.com/youtube/terms/developer-policies">Developer Policies</a>를 확인해야 합니다. 이 초안은 정책 준수나 감사 승인 완료를 증명하지 않습니다.</p>
-      <h2>인증과 데이터</h2>
-      <p>운영자는 본인 Google 계정으로 권한을 부여합니다. 토큰은 로컬 저장하며 타인과 공유하지 않습니다. 데이터 처리·보관·철회 방법은 <a href="privacy-policy.html">개인정보 처리방침</a>을 따릅니다.</p>
-      <h2>가용성과 변경</h2>
-      <p>API 권한, 할당량, 채널 상태와 Google의 정책에 따라 요청이 거부되거나 예약이 적용되지 않을 수 있습니다. 운영자는 dry-run 계획 및 실행 후 결과를 확인하고, YouTube Studio에서 최종 상태를 확인합니다. 기능·사용 범위가 바뀌면 이 약관을 다시 검토합니다.</p>
-      <p>운영 및 문의: 「각다귀」 채널 단일 운영자 · <strong>chltmdghkstmdghks@naver.com</strong>.</p>
-    </section>
-    <section id="english" lang="en" aria-labelledby="en-terms">
-      <h2 id="en-terms">Terms of Use — English</h2>
-      <h2>Scope and purpose</h2>
-      <p>The YouTube tools in content-factory are internal software used by the single operator of the channel 각다귀 to manage that operator’s own channel. The tool does not provide external user accounts or a paid public service.</p>
-      <h2>Operator responsibilities</h2>
-      <p>The operator must use owned or authorized content and review factual accuracy, copyright, privacy, audience settings, and synthetic media disclosures. Uploading and scheduling require direct operator approval and execution. The general production pipeline prepares packages without automatically publishing them.</p>
-      <h2>YouTube services</h2>
-      <p>This tool uses YouTube API Services. Use is subject to the <a href="https://www.youtube.com/t/terms">YouTube Terms of Service</a> and applicable API terms. The operator must review the current <a href="https://developers.google.com/youtube/terms/api-services-terms-of-service">YouTube API Services Terms of Service</a> and <a href="https://developers.google.com/youtube/terms/developer-policies">Developer Policies</a>. This draft does not establish policy compliance or audit approval.</p>
-      <h2>Authentication and data</h2>
-      <p>The operator authorizes access using their own Google account. Tokens are stored locally and are not shared. Data handling, retention, and revocation are described in the <a href="privacy-policy.html">Privacy Policy</a>.</p>
-      <h2>Availability and changes</h2>
-      <p>Requests and scheduling may fail because of API permissions, quota, channel state, or Google policy restrictions. The operator reviews the dry-run plan, operation results, and final state in YouTube Studio. Changes to functionality or usage require review of these terms.</p>
-      <p>Operator and contact: the single operator of the channel 각다귀 · <strong>chltmdghkstmdghks@naver.com</strong>. Draft date: 2026-10-08; review actual operating conditions and replace the contact placeholder before publication or submission.</p>
-    </section>
-  </main>
-  <footer><a href="index.html">홈페이지</a> · <a href="privacy-policy.html">개인정보 처리방침</a></footer>
+<header><nav aria-label="Main"><a href="index.html">Home / 소개</a><a href="privacy-policy.html">Privacy Policy / 개인정보 처리방침</a><a href="terms.html">Terms / 이용약관</a></nav></header>
+<main>
+<p class="label">Effective / 시행일: 2026-10-20</p>
+<h1>이용약관 / Terms of Service</h1>
+<section lang="ko"><h2>한국어</h2>
+<p>이 도구는 운영자 각다귀 채널 운영자 (Gakdagwi channel operator)이(가) 본인 YouTube 채널 「각다귀」를 관리하기 위해 직접 실행하는 내부 도구이며 일반 이용자에게 제공되지 않습니다.</p>
+<ol><li><strong>YouTube 약관</strong>: 이 도구를 사용함으로써 <a href="https://www.youtube.com/t/terms">YouTube 서비스 약관</a>에 동의하는 것으로 봅니다.</li>
+<li><strong>개인정보</strong>: <a href="privacy-policy.html">개인정보 처리방침</a>과 <a href="http://www.google.com/policies/privacy">Google 개인정보처리방침</a>이 적용됩니다.</li>
+<li><strong>허용되는 사용</strong>: 운영자 본인 채널의 업로드·메타데이터 관리·통계 조회에 한합니다. 타인 채널 관리, 자동 대량 게시, 시청 수 조작, 타인 콘텐츠 복제를 하지 않습니다. 게시는 운영자가 직접 실행한 명령으로만 이루어집니다.</li>
+<li><strong>접근 철회</strong>: <a href="https://security.google.com/settings/security/permissions">Google 보안 설정</a>에서 언제든 철회할 수 있습니다.</li>
+<li><strong>보증·책임</strong>: 도구는 현상 그대로 제공되며, 법이 허용하는 범위에서 보증하지 않습니다.</li>
+<li><strong>문의</strong>: chltmdghsktmdghks@gmail.com</li></ol></section>
+<section lang="en"><h2>English</h2>
+<p>This is an internal tool run directly by the operator, 각다귀 채널 운영자 (Gakdagwi channel operator), to manage the operator's own YouTube channel "Gakdagwi". It is not offered to the general public.</p>
+<ol><li><strong>YouTube terms</strong>: By using this tool you agree to be bound by the <a href="https://www.youtube.com/t/terms">YouTube Terms of Service</a>.</li>
+<li><strong>Privacy</strong>: The <a href="privacy-policy.html">Privacy Policy</a> and the <a href="http://www.google.com/policies/privacy">Google Privacy Policy</a> apply.</li>
+<li><strong>Permitted use</strong>: Only uploading, metadata management and statistics for the operator's own channel. No managing other people's channels, bulk auto-posting, view manipulation or copying of others' content. Publishing happens only through commands the operator runs personally.</li>
+<li><strong>Revoking access</strong>: Possible at any time on the <a href="https://security.google.com/settings/security/permissions">Google security settings page</a>.</li>
+<li><strong>Warranty and liability</strong>: The tool is provided as is, without warranty to the extent permitted by law.</li>
+<li><strong>Contact</strong>: chltmdghsktmdghks@gmail.com</li></ol></section>
+</main>
+<footer>Gakdagwi Internal Tool · Operator: 각다귀 채널 운영자 (Gakdagwi channel operator) · Contact: <a href="mailto:chltmdghsktmdghks@gmail.com">chltmdghsktmdghks@gmail.com</a> · <a href="https://www.youtube.com/t/terms">YouTube Terms of Service</a> · <a href="http://www.google.com/policies/privacy">Google Privacy Policy</a></footer>
 </body>
 </html>

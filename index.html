@@ -1,41 +1,35 @@
 <!doctype html>
 <html lang="ko">
 <head>
-  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-  <meta name="description" content="각다귀 YouTube 채널 단일 운영자를 위한 로컬 콘텐츠 제작·관리 도구">
-  <title>content-factory · 각다귀 채널 내부 도구</title>
-  <style>
-    *{box-sizing:border-box}body{margin:0;background:#f4f6f8;color:#202b36;font:17px/1.75 system-ui,-apple-system,sans-serif}
-    header,main,footer{max-width:1000px;margin:auto;padding:24px}header{padding-top:42px}nav{display:flex;gap:20px;flex-wrap:wrap}
-    a{color:#075a5c;text-underline-offset:4px}a:focus-visible{outline:3px solid #075a5c;outline-offset:4px}h1{font-size:2.6rem;line-height:1.2;margin:16px 0}
-    h2{font-size:1.35rem}.hero,.card{background:white;border:1px solid #d7e0e5;border-radius:14px;padding:26px}.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px;margin-top:20px}
-    .label,footer{color:#526071;font-size:.92rem}.note{background:#edf4f4;padding:14px 18px;border-left:4px solid #075a5c}section[lang=en]{margin-top:32px}
-    @media(max-width:650px){header,main,footer{padding:18px}.grid{grid-template-columns:1fr}h1{font-size:2rem}.hero,.card{padding:20px}}
-  </style>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Internal YouTube channel operations tool for the Gakdagwi channel">
+<title>Gakdagwi Channel Tool</title>
+<style>:root{color-scheme:light;--ink:#1f2933;--muted:#52606d;--line:#d9e2ec;--bg:#f5f7fa;--accent:#0b6b6f}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.75 system-ui,-apple-system,"Apple SD Gothic Neo",sans-serif}
+header,main,footer{max-width:900px;margin:auto;padding:22px}header{padding-top:36px}nav{display:flex;gap:18px;flex-wrap:wrap}
+a{color:var(--accent);text-underline-offset:3px}main{background:#fff;border:1px solid var(--line);border-radius:12px}
+h1{font-size:1.9rem;line-height:1.3}h2{font-size:1.25rem;margin-top:28px}section+section{margin-top:36px;padding-top:18px;border-top:1px solid var(--line)}
+table{border-collapse:collapse;width:100%;font-size:.94rem}th,td{border:1px solid var(--line);padding:6px 9px;text-align:left;vertical-align:top}th{background:#eef3f6}
+code{overflow-wrap:anywhere;background:#f0f4f7;padding:0 4px;border-radius:4px}.label,footer{color:var(--muted);font-size:.9rem}
+.box{padding:12px 16px;background:#eaf4f4;border-left:4px solid var(--accent)}
+@media(max-width:600px){header,main,footer{padding:16px}main{border-radius:0}h1{font-size:1.5rem}}</style>
 </head>
 <body>
-  <header><nav aria-label="주요 메뉴"><a href="privacy-policy.html">개인정보 처리방침</a><a href="terms.html">이용약관</a><a href="#english" lang="en">English</a></nav></header>
-  <main>
-    <section class="hero" aria-labelledby="app-title">
-      <p class="label">각다귀 · 단일 운영자 전용 · 로컬 내부 도구</p>
-      <h1 id="app-title">content-factory</h1>
-      <p>YouTube 채널 「각다귀」의 운영자가 콘텐츠를 제작하고, 본인 채널의 업로드·예약·메타데이터·성과를 관리하는 도구입니다.</p>
-      <p class="note">앱 소개 초안 · 2026-10-08. 외부 회원가입이나 공용 서비스는 제공하지 않습니다. Google/YouTube가 인증하거나 승인한 앱이라는 의미는 아닙니다.</p>
-    </section>
-    <div class="grid">
-      <section class="card"><h2>제작과 검수</h2><p>콘텐츠 제작 후 QA로 패키지를 확인합니다. 자동 제작 파이프라인은 게시 준비까지만 진행합니다.</p></section>
-      <section class="card"><h2>직접 실행하는 채널 관리</h2><p>운영자가 승인한 영상 업로드, 예약 공개, 제목·설명·태그 수정, 재생목록 추가 및 본인 채널 분석 조회를 지원합니다.</p></section>
-      <section class="card"><h2>로컬 인증과 데이터</h2><p>Google OAuth 토큰과 작업 기록은 운영자의 Mac에 저장합니다. 이 안내 사이트에는 토큰이나 비공개 영상 데이터를 올리지 않습니다.</p></section>
-      <section class="card"><h2>운영자 연락처</h2><p>「각다귀」 채널 단일 운영자<br><strong>chltmdghkstmdghks@naver.com</strong></p><p class="label">공개·감사 제출 전 실제 이메일로 교체해야 합니다.</p></section>
-    </div>
-    <section id="english" lang="en" class="card" aria-labelledby="en-app">
-      <h2 id="en-app">About the application</h2>
-      <p>content-factory is a local internal production and channel management tool used only by the single operator of the YouTube channel 각다귀. It supports the operator’s own uploads, scheduled publication, metadata updates, playlists, and analytics queries.</p>
-      <p>The production pipeline prepares reviewed packages. Uploading and scheduling are manually authorized and executed by the operator. OAuth credentials and operation records remain on the operator’s Mac. There is no public registration or multi-user service.</p>
-      <p>This information website does not represent Google/YouTube certification or audit approval. Contact: <strong>chltmdghkstmdghks@naver.com</strong>. Draft date: 2026-10-08; replace the contact placeholder before publication or submission.</p>
-      <p><a href="privacy-policy.html#english">Privacy Policy</a> · <a href="terms.html#english">Terms of Use</a></p>
-    </section>
-  </main>
-  <footer>content-factory · 「각다귀」 채널 내부 도구</footer>
+<header><nav aria-label="Main"><a href="index.html">Home / 소개</a><a href="privacy-policy.html">Privacy Policy / 개인정보 처리방침</a><a href="terms.html">Terms / 이용약관</a></nav></header>
+<main>
+<p class="label">Gakdagwi (각다귀) · content-factory</p>
+<h1>각다귀 채널 운영 도구 / Gakdagwi Channel Operations Tool</h1>
+<section lang="ko"><h2>한국어</h2>
+<p>이 도구는 YouTube 채널 「각다귀」(채널 ID <code>UC4Qd1XCACCsg2omVh-itmuQ</code>)의 운영자 1명이 본인 채널만 관리하기 위해 자신의 Mac에서 실행하는 명령줄(CLI) 프로그램입니다. 외부 이용자 가입, 서버, 데이터베이스가 없습니다.</p>
+<ul><li>운영자가 검수·승인한 영상의 업로드와 예약 공개 설정</li><li>본인 영상의 제목·설명·태그·언어·아동용 여부·합성 콘텐츠 표시 수정, 자막·현지화·본인 채널 댓글 등록</li><li>본인 재생목록 조회와 영상 추가</li><li>본인 채널의 공개 통계 및 YouTube Analytics 성과 조회</li></ul>
+<p>이 도구는 YouTube API Services를 사용합니다. 이 도구를 사용함으로써 <a href="https://www.youtube.com/t/terms">YouTube 서비스 약관(Terms of Service)</a>에 동의하는 것으로 봅니다. Google의 정보 처리 방식은 <a href="http://www.google.com/policies/privacy">Google 개인정보처리방침</a>을 참고하세요.</p>
+<p><a href="privacy-policy.html">개인정보 처리방침</a> · <a href="terms.html">이용약관</a> · 운영자: 각다귀 채널 운영자 (Gakdagwi channel operator) · 문의: chltmdghsktmdghks@gmail.com</p></section>
+<section lang="en"><h2>English</h2>
+<p>This is a command-line program run on the operator's own Mac by the single operator of the YouTube channel "Gakdagwi" (channel ID <code>UC4Qd1XCACCsg2omVh-itmuQ</code>) to manage that channel only. There is no external-user sign-up, no server, and no database.</p>
+<ul><li>Uploading operator-reviewed videos and scheduling publication</li><li>Editing the operator's own video title, description, tags, language, made-for-kids and synthetic-media settings; adding captions, localizations and a channel-owner comment</li><li>Listing the operator's own playlists and adding videos to them</li><li>Reading public statistics and YouTube Analytics for the operator's own channel</li></ul>
+<p>This tool uses YouTube API Services. By using this tool you agree to be bound by the <a href="https://www.youtube.com/t/terms">YouTube Terms of Service</a>. Google's handling of information is described in the <a href="http://www.google.com/policies/privacy">Google Privacy Policy</a>.</p>
+<p><a href="privacy-policy.html">Privacy Policy</a> · <a href="terms.html">Terms of Service</a> · Operator: 각다귀 채널 운영자 (Gakdagwi channel operator) · Contact: chltmdghsktmdghks@gmail.com</p></section>
+</main>
+<footer>Gakdagwi Internal Tool · Operator: 각다귀 채널 운영자 (Gakdagwi channel operator) · Contact: <a href="mailto:chltmdghsktmdghks@gmail.com">chltmdghsktmdghks@gmail.com</a> · <a href="https://www.youtube.com/t/terms">YouTube Terms of Service</a> · <a href="http://www.google.com/policies/privacy">Google Privacy Policy</a></footer>
 </body>
 </html>
